@@ -11,7 +11,7 @@ class Loader extends PluginBase {
 
 	protected $exemptedEntities = [];
 
-	public function onEnable(): void {
+	public function onEnable() {
 		$this->getServer()->getCommandMap()->register("clearlagg", new ClearLaggCommand($this));
 	}
 
